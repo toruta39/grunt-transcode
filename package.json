@@ -1,0 +1,32 @@
+{
+  "name": "grunt-transcode",
+  "version": "0.0.1",
+  "description": "A file encoding converter that WORKS!",
+  "homepage": "https://github.com/toruta39/grunt-transcode",
+  "repository": "https://github.com/toruta39/grunt-transcode.git",
+  "author": {
+    "name": "Joshua Zhang",
+    "email": "toruta39@gmail.com",
+    "url": "https://github.com/toruta39"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "iconv-lite": "^0.4.3",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
