@@ -1,7 +1,7 @@
 {
   "name": "grunt-transcode",
-  "version": "0.0.2",
-  "description": "A file encoding converter that WORKS!",
+  "version": "0.0.3",
+  "description": "A file encoding converter that really works!",
   "homepage": "https://github.com/toruta39/grunt-transcode",
   "repository": "https://github.com/toruta39/grunt-transcode.git",
   "author": {
