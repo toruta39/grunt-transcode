@@ -1,6 +1,6 @@
 {
   "name": "grunt-transcode",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A file encoding converter that WORKS!",
   "homepage": "https://github.com/toruta39/grunt-transcode",
   "repository": "https://github.com/toruta39/grunt-transcode.git",
@@ -28,5 +28,8 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.4.3"
   }
 }
