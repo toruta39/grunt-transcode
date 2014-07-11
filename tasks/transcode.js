@@ -18,9 +18,7 @@ module.exports = function (grunt) {
 
     var options = this.options({
       fromEncoding: 'utf8',
-      toEncoding: 'utf8',
-      processContentExclude: [],
-      mode: false
+      toEncoding: 'utf8'
     });
 
     var copyOptions = {
@@ -30,8 +28,7 @@ module.exports = function (grunt) {
         content = iconv.encode(content, options.toEncoding);
 
         return content;
-      },
-      noProcess: options.noProcess || options.processContentExclude,
+      }
     };
 
     var dest;
@@ -58,9 +55,6 @@ module.exports = function (grunt) {
         } else {
           grunt.verbose.writeln('Converting ' + src.cyan + ' -> ' + dest.cyan);
           grunt.file.copy(src, dest, copyOptions);
-          if (options.mode !== false) {
-            fs.chmodSync(dest, (options.mode === true) ? fs.lstatSync(src).mode : options.mode);
-          }
           tally.files++;
         }
       });

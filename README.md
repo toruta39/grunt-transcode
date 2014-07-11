@@ -26,7 +26,8 @@ In your project's Gruntfile, add a section named `transcode` to the data object 
 grunt.initConfig({
   transcode: {
     options: {
-      // Task-specific options go here.
+      fromEncoding: 'sjis', // Source file encoding
+      toEncoding: 'utf8' // Target file encoding
     },
     your_target: {
       // Target-specific file lists and/or options go here.
@@ -37,48 +38,61 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.fromEncoding
 Type: `String`
-Default value: `',  '`
+Default value: `'utf8'`
 
-A string value that is used to do something with whatever.
+A string value that suggests the source file encoding.
 
-#### options.punctuation
+#### options.toEncoding
 Type: `String`
-Default value: `'.'`
+Default value: `'utf8'`
 
-A string value that is used to do something else with whatever else.
+A string value that suggests the target file encoding.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+#### Simple file list
+
+In this example, a GBK file is converted to UTF-8 with an assgined filename.
 
 ```js
 grunt.initConfig({
   transcode: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+    sjis: {
+      options: {
+        fromEncoding: 'gkb',
+        toEncoding: 'utf8'
+      },
+      files: {
+        'js/templates.utf8.js': ['js/templates.gkb.js']
+      }
+    }
+  }
 })
 ```
 
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+#### Expanded file list
+
+In this example, JavaScript files with `.utf8` suffix are converted to Shift-JIS with `.sjis` suffix.
 
 ```js
 grunt.initConfig({
   transcode: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
+    js: {
+      options: {
+        fromEncoding: 'utf8',
+        toEncoding: 'sjis'
+      },
+      files: [{
+        expand: true,
+        cwd: 'js/',
+        src: '**/*.utf8.js',
+        dest: 'js/',
+        ext: '.sjis.js'
+      }]
+    }
+  }
 })
 ```
 

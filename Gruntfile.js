@@ -54,23 +54,15 @@ module.exports = function (grunt) {
       },
 
       single: {
-        files: [
-          {src: ['test/fixtures/test.js'], dest: 'tmp/single.js'}
-        ]
+        files: {
+          'tmp/single.js': ['test/fixtures/test.js']
+        }
       },
 
       verbose: {
         files: [
           {expand: true, src: ['test/fixtures/**'], dest: 'tmp/transcode_test_verbose/'}
         ]
-      },
-
-      mode: {
-        options: {
-          mode: '0444',
-        },
-        src: ['test/fixtures/test2.js'],
-        dest: 'tmp/mode.js',
       }
     },
 
