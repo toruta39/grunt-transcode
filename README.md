@@ -66,11 +66,11 @@ grunt.initConfig({
   transcode: {
     sjis: {
       options: {
-        fromEncoding: 'gkb',
+        fromEncoding: 'gbk',
         toEncoding: 'utf8'
       },
       files: {
-        'js/templates.utf8.js': ['js/templates.gkb.js']
+        'js/templates.utf8.js': ['js/templates.gbk.js']
       }
     }
   }
