@@ -1,6 +1,11 @@
 # grunt-transcode
 
-> A file encoding converter that WORKS!
+> A file encoding converter that really works! 
+
+Supporting many encodings, including multi-byte such as Shift_JIS, EUC-JP, GB2312, GBK, GB18030, KS_C_5601, Big5, Big5-HKSCS, etc.
+
+A full list of supported encodings can be referred from [iconv-lite](https://github.com/ashtuchkin/iconv-lite)'s wiki:  
+<https://github.com/ashtuchkin/iconv-lite/wiki/Supported-Encodings>
 
 ## Getting Started
 This plugin requires Grunt.
