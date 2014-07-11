@@ -64,7 +64,7 @@ In this example, a GBK file is converted to UTF-8 with an assgined filename.
 ```js
 grunt.initConfig({
   transcode: {
-    sjis: {
+    templates: {
       options: {
         fromEncoding: 'gbk',
         toEncoding: 'utf8'
