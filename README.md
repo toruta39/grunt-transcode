@@ -1,4 +1,6 @@
-# grunt-transcode
+# grunt-transcode [![NPM version](https://badge.fury.io/js/grunt-transcode.svg)](http://badge.fury.io/js/grunt-transcode) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+[![NPM](https://nodei.co/npm/grunt-transcode.png?downloads=true&stars=true)](https://nodei.co/npm/grunt-transcode/)
 
 > A file encoding converter that really works! 
 
@@ -64,7 +66,7 @@ In this example, a GBK file is converted to UTF-8 with an assgined filename.
 ```js
 grunt.initConfig({
   transcode: {
-    sjis: {
+    templates: {
       options: {
         fromEncoding: 'gbk',
         toEncoding: 'utf8'
