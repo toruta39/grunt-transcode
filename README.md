@@ -1,4 +1,4 @@
-# grunt-transcode [![NPM version](https://badge.fury.io/js/grunt-transcode.svg)](http://badge.fury.io/js/grunt-transcode) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+# grunt-transcode [![NPM version](https://badge.fury.io/js/grunt-transcode.svg)](http://badge.fury.io/js/grunt-transcode) [![Build Status](https://travis-ci.org/toruta39/grunt-transcode.svg?branch=master)](https://travis-ci.org/toruta39/grunt-transcode)
 
 [![NPM](https://nodei.co/npm/grunt-transcode.png?downloads=true&stars=true)](https://nodei.co/npm/grunt-transcode/)
 
