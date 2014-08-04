@@ -30,6 +30,7 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "grunt-cli": "^0.1.13",
     "iconv-lite": "^0.4.3"
   }
 }
